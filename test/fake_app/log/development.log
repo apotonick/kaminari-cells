@@ -104,3 +104,75 @@ Processing by UsersController#index as HTML
   Rendered inline template (22.5ms)
   Rendered inline template (24.0ms)
 Completed 500 Internal Server Error in 26ms
+---------------------------------------------
+KaminariCellsTest: test_rendering_normal_cell
+---------------------------------------------
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from run at /Users/nick/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/minitest/unit.rb:1262)
+Processing by UsersController#index as HTML
+  Rendered inline template (12.7ms)
+  Rendered inline template (15.0ms)
+Completed 500 Internal Server Error in 20ms
+---------------------------------------------
+KaminariCellsTest: test_rendering_normal_cell
+---------------------------------------------
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from run at /Users/nick/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/minitest/unit.rb:1262)
+Processing by UsersController#index as HTML
+  Rendered inline template (15.1ms)
+  Rendered inline template (17.5ms)
+Completed 500 Internal Server Error in 22ms
+---------------------------------------------
+KaminariCellsTest: test_rendering_normal_cell
+---------------------------------------------
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from run at /Users/nick/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/minitest/unit.rb:1262)
+Processing by UsersController#index as HTML
+  Rendered inline template (13.7ms)
+  Rendered inline template (16.2ms)
+Completed 500 Internal Server Error in 22ms
+---------------------------------------------
+KaminariCellsTest: test_rendering_normal_cell
+---------------------------------------------
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from run at /Users/nick/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/minitest/unit.rb:1262)
+Processing by UsersController#index as HTML
+  Rendered inline template (11.2ms)
+  Rendered inline template (13.5ms)
+Completed 500 Internal Server Error in 19ms
+---------------------------------------------
+KaminariCellsTest: test_rendering_normal_cell
+---------------------------------------------
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from run at /Users/nick/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/minitest/unit.rb:1262)
+Processing by UsersController#index as HTML
+  Rendered inline template (14.2ms)
+  Rendered inline template (16.7ms)
+Completed 500 Internal Server Error in 22ms
+---------------------------------------------
+KaminariCellsTest: test_rendering_normal_cell
+---------------------------------------------
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from run at /Users/nick/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/minitest/unit.rb:1262)
+Processing by UsersController#index as HTML
+  Rendered inline template (18.7ms)
+  Rendered inline template (20.6ms)
+Completed 500 Internal Server Error in 26ms
+---------------------------------------------
+KaminariCellsTest: test_rendering_normal_cell
+---------------------------------------------
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from run at /Users/nick/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/minitest/unit.rb:1262)
+Processing by UsersController#index as HTML
+  Rendered inline template (22.1ms)
+  Rendered inline template (24.1ms)
+Completed 200 OK in 29ms (Views: 28.3ms)
+---------------------------------------------
+KaminariCellsTest: test_rendering_normal_cell
+---------------------------------------------
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from run at /Users/nick/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/minitest/unit.rb:1262)
+Processing by UsersController#index as HTML
+  Rendered inline template (15.7ms)
+  Rendered inline template (17.7ms)
+Completed 200 OK in 22ms (Views: 21.3ms)
+---------------------------------------------
+KaminariCellsTest: test_rendering_normal_cell
+---------------------------------------------
+DEPRECATION WARNING: You didn't set config.secret_key_base. Read the upgrade documentation to learn more about this new config option. (called from run at /Users/nick/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/minitest/unit.rb:1262)
+Processing by UsersController#index as HTML
+  Rendered inline template (25.0ms)
+  Rendered inline template (27.0ms)
+Completed 200 OK in 31ms (Views: 30.7ms)

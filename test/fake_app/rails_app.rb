@@ -5,6 +5,7 @@ require 'active_record'
 
 require 'fake_app/config'
 
+
 # config
 app = Class.new(Rails::Application)
 app.config.secret_token = '3b7cd727ee24e8444053437c36cc66c4'
@@ -38,5 +39,3 @@ end
 # helpers
 Object.const_set(:ApplicationHelper, Module.new)
 
-require 'cells'
-require 'fake_app/cells'
