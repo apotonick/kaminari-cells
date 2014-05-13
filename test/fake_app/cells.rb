@@ -1,5 +1,5 @@
 class UserCell < Cell::Rails
-  helper Kaminari::Helpers::CellsHelper
+  include Kaminari::Cells
 
   def show(users)
     @users = users
@@ -12,7 +12,7 @@ end
 
 class ViewModelCell < Cell::Rails
   include ViewModel
-  include Kaminari::Helpers::CellsHelper
+  include Kaminari::Cells
 
   def show
     render :inline => <<-ERB

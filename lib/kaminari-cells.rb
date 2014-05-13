@@ -13,3 +13,5 @@ module Kaminari
     end
   end
 end
+
+require 'kaminari/cells'
