@@ -1,6 +1,7 @@
 # Kaminari::Cells
 
-TODO: Write a gem description
+_Use Kaminari in Cells._
+
 
 ## Installation
 
@@ -8,22 +9,22 @@ Add this line to your application's Gemfile:
 
     gem 'kaminari-cells'
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install kaminari-cells
 
 ## Usage
 
-TODO: Write usage instructions here
+To use the wonderful [Kaminari](https://github.com/amatsuda/kaminari) gem in your Cells, just do
 
-## Contributing
+```ruby
+  class CommentsCell < Cell::Rails
+    include Kaminari::Cells
+```
 
-1. Fork it ( https://github.com/[my-github-username]/kaminari-cells/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+The same works with Cells [view models](https://github.com/apotonick/cells#view-models). Just make sure to include it in the right order.
+
+```ruby
+  class CommentsCell < Cell::Rails
+    include ViewModel
+    include Kaminari::Cells
+```
+
+You can now use `#paginate` in your cell and it will work.
