@@ -20,4 +20,9 @@ class KaminariCellsTest < ActionController::TestCase
     get :index
     assert_equal "<p>1</p>\n\n", @response.body
   end
+
+  test "rendering view model cell" do
+    get :show, :id => 1
+    assert_equal "<p>1</p>\n\n", @response.body
+  end
 end

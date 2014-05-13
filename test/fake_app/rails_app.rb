@@ -34,6 +34,13 @@ class UsersController < ApplicationController
 <%= render_cell(:user, :show, @users) %>
 ERB
   end
+
+  def show
+    @users = User.all.page params[:page]
+    render :inline => <<-ERB
+<%= cell(:view_model, @users).show %>
+ERB
+  end
 end
 
 # helpers
