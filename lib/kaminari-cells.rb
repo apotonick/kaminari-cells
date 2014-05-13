@@ -1,4 +1,4 @@
-require "kaminari-cells/version"
+require "kaminari/cells/version"
 
 module Kaminari
   module Helpers
