@@ -28,13 +28,15 @@ require 'fake_app/models'
 class ApplicationController < ActionController::Base; end
 class UsersController < ApplicationController
   def index
-    @users = User.page params[:page]
+    @users = User.all.page params[:page]
     render :inline => <<-ERB
-<%= @users.map(&:name).join("\n") %>
-<%= paginate @users %>
+<%= render_cell(:user, :show, @users) %>
 ERB
   end
 end
 
 # helpers
 Object.const_set(:ApplicationHelper, Module.new)
+
+require 'cells'
+require 'fake_app/cells'
