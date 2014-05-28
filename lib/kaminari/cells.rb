@@ -3,7 +3,8 @@ module Kaminari
     extend ActiveSupport::Concern
 
     included do
-      if self < (Cell::Rails::ViewModel)
+      # compat with 3.10's ViewModel.
+      if (const_defined?("Cell::Rails::ViewModel") and self < Cell::Rails::ViewModel) or (const_defined?("Cell::ViewModel") and self < Cell::ViewModel)
         include Kaminari::Helpers::CellsHelper
       else
         helper Kaminari::Helpers::CellsHelper
