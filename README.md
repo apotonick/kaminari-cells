@@ -19,11 +19,10 @@ To use the wonderful [Kaminari](https://github.com/amatsuda/kaminari) gem in you
     include Kaminari::Cells
 ```
 
-The same works with Cells [view models](https://github.com/apotonick/cells#view-models). Just make sure to include it in the right order.
+The same works with Cells [view models](https://github.com/apotonick/cells#view-models).
 
 ```ruby
-  class CommentsCell < Cell::Rails
-    include ViewModel
+  class CommentsCell < Cell::ViewModel
     include Kaminari::Cells
 ```
 

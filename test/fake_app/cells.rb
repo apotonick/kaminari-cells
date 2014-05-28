@@ -10,8 +10,7 @@ ERB
   end
 end
 
-class ViewModelCell < Cell::Rails
-  include ViewModel
+class ViewModelCell < Cell::ViewModel
   include Kaminari::Cells
 
   def show
