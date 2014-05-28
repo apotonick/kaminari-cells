@@ -3,7 +3,7 @@ require "kaminari/cells/version"
 module Kaminari
   module Helpers
     module CellsHelper
-      include ActionViewExtension
+      include Kaminari::ActionViewExtension
       include ActionView::Helpers::OutputSafetyHelper
 
       def paginate(scope, options = {}, &block)
