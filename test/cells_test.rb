@@ -3,7 +3,7 @@ require 'test_helper'
 Cell::Base.class_eval do
   include Rails.application.routes.url_helpers # FIXME: that SUCKS.
 
-  append_view_path "test/fake_app/cells/"
+  append_view_path "test/fake_app/app-cells/"
 end
 
 
