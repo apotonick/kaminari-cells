@@ -1,3 +1,5 @@
+require "cells"
+require "kaminari"
 require "kaminari/cells/version"
 
 module Kaminari
