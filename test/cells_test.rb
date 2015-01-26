@@ -1,10 +1,10 @@
 require 'test_helper'
 
-Cell::Base.class_eval do
-  include Rails.application.routes.url_helpers # FIXME: that SUCKS.
+# Cell::ViewModel.class_eval do
+#   include Rails.application.routes.url_helpers # FIXME: that SUCKS.
 
-  append_view_path "test/fake_app/app-cells/"
-end
+#   append_view_path "test/fake_app/app-cells/"
+# end
 
 
 class KaminariCellsTest < ActionController::TestCase
@@ -16,10 +16,11 @@ class KaminariCellsTest < ActionController::TestCase
     50.times {|i| User.create! :name => "user#{i}"}
   end
 
-  test "rendering normal cell" do
-    get :index
-    assert_equal "<p>1</p>\n\n", @response.body
-  end
+  # TODO: test concept cells
+  # test "rendering normal cell" do
+  #   get :index
+  #   assert_equal "<p>1</p>\n\n", @response.body
+  # end
 
   test "rendering view model cell" do
     get :show, :id => 1
