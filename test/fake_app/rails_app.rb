@@ -46,7 +46,7 @@ ERB
   def show
     @users = User.all.page params[:page]
     render :inline => <<-ERB
-<%= cell(:view_model, @users).show %>
+<%= cell(:view_model, @users).(:show) %>
 ERB
   end
 end

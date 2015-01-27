@@ -24,6 +24,6 @@ class KaminariCellsTest < ActionController::TestCase
 
   test "rendering view model cell" do
     get :show, :id => 1
-    assert_equal "<p>1</p>\n\n", @response.body
+    assert_equal "<p>1</p>\n", @response.body
   end
 end
