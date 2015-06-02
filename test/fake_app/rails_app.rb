@@ -1,9 +1,13 @@
-# require 'rails/all'
+require "cells"
+require 'kaminari-cells'
+require 'fake_app/cells'
+
 require 'action_controller/railtie'
 require 'action_view/railtie'
 require 'active_record'
 
 require 'fake_app/config'
+
 
 
 # config
@@ -24,8 +28,6 @@ end
 #models
 require 'fake_app/models'
 
-require "cell/rails"
-
 ActionView::Base.class_eval do
   include ::Cell::RailsExtensions::ActionView
 end
@@ -36,13 +38,6 @@ end
 # controllers
 class ApplicationController < ActionController::Base; end
 class UsersController < ApplicationController
-  def index
-    @users = User.all.page params[:page]
-    render :inline => <<-ERB
-<%= render_cell(:user, :show, @users) %>
-ERB
-  end
-
   def show
     @users = User.all.page params[:page]
     render :inline => <<-ERB
