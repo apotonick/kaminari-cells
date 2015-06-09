@@ -1,3 +1,7 @@
+# 0.0.4
+
+Require cell-4.0.0, cause we can.
+
 # 0.0.3
 
 Require cells and kaminari to make sure all files are available.
