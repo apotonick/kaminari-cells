@@ -12,14 +12,7 @@ Add this line to your application's Gemfile:
 
 ## Usage
 
-To use the wonderful [Kaminari](https://github.com/amatsuda/kaminari) gem in your Cells, just do
-
-```ruby
-  class CommentsCell < Cell::Rails
-    include Kaminari::Cells
-```
-
-The same works with Cells [view models](https://github.com/apotonick/cells#view-models).
+To use the wonderful [Kaminari](https://github.com/amatsuda/kaminari) gem in your Cells view models, just do
 
 ```ruby
   class CommentsCell < Cell::ViewModel
