@@ -1,4 +1,5 @@
 require "cells"
+require "cells-erb"
 require 'kaminari-cells'
 require 'fake_app/cells'
 
