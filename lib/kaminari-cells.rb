@@ -1,12 +1,12 @@
 require "cells"
-require "kaminari"
+require "kaminari/helpers/helper_methods"
 require "kaminari/cells/version"
 require "cell/partial"
 
 module Kaminari
   module Helpers
     module CellsHelper
-      include Kaminari::ActionViewExtension
+      include Kaminari::Helpers::HelperMethods
       include ActionView::Helpers::OutputSafetyHelper
       include ActionView::Helpers::TranslationHelper
       include Cell::ViewModel::Partial
