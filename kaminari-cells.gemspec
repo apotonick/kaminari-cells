@@ -20,10 +20,11 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "kaminari", "~> 0.16.0"
   spec.add_dependency "cells", ">= 4.0.0", "<= 5.0.0"
-  spec.add_development_dependency "cells-erb"
   spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake"
+  spec.add_development_dependency "cells-erb"
+  spec.add_development_dependency "cells-rails"
   spec.add_development_dependency "minitest"
-  spec.add_development_dependency "activerecord"
+  spec.add_development_dependency "rails", "5.1.1"
+  spec.add_development_dependency "rake"
   spec.add_development_dependency "sqlite3"
 end
