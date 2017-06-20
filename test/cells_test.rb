@@ -23,7 +23,7 @@ class KaminariCellsTest < ActionController::TestCase
   # end
 
   test "rendering view model cell" do
-    get :show, :id => 1
+    get :show, params: { id: 1 }
     assert_equal "<p>1</p>\n", @response.body
   end
 end
