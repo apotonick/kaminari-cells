@@ -4,7 +4,7 @@ require "cells-rails"
 require 'kaminari-cells'
 
 require 'action_controller/railtie'
-require 'action_view/railtie'
+require 'action_view/base'
 require 'active_record'
 
 # config
