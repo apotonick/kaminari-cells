@@ -12,7 +12,7 @@ ActiveSupport.on_load :action_view do
         include ActionView::Helpers::TranslationHelper
         include Cell::ViewModel::Partial
 
-        def paginate(scope, options = {}, &block)
+        def paginate(scope, **options, &block)
           options = options.reverse_merge(:views_prefix => "../views/")
           super
         end
