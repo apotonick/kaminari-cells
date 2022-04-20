@@ -19,6 +19,5 @@ ActiveSupport.on_load :action_view do
       end
     end
   end
+  require 'kaminari/cells'
 end
-
-require 'kaminari/cells'
