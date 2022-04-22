@@ -1,3 +1,8 @@
+# 1.0.1
+
+Add support for Rails 7 and Ruby 3.
+Bump kaminari dependency to `kaminari ~> 1.2.0`.
+
 # 0.1.0
 
 Tighten dependency to `kaminari ~> 0.16.0` (previously was `kaminari >= 0.16.0`.
