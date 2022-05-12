@@ -1,3 +1,7 @@
+# 1.0.2
+
+Remove ActionView load hook.
+
 # 1.0.1
 
 Add support for Rails 7 and Ruby 3.
